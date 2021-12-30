@@ -22,7 +22,7 @@ export default function AppFooter() {
 				<div className="foot-com foot-3">
                 <a className="waves-effect waves-light" href="booking.html">room reservation</a> </div>
 				<div className="foot-com foot-4">
-					<a href="#"><img src="images/card.png" alt="" />
+					<a href="#"><img src="/images/card.png" alt="" />
 					</a>
 				</div>
 			</div>
