@@ -3,6 +3,8 @@ import { useRouter } from "next/router";
 import { useEffect } from "react";
 import { AppLayout } from "../../components/AppLayout";
 import {hotels} from '../../data';
+import Image from 'next/image';
+import Link from 'next/link'
 
 export default function HotelDetail() {
     const router = useRouter();
@@ -23,7 +25,7 @@ export default function HotelDetail() {
 					<div className="inn-bod">
 						<div className="inn-detail-p1 inn-com">
 							<h2>{currentHotel?.name}</h2>
-							<div className="r2-ratt"> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <img src="/images/h-trip.png" alt=""/> <span>Excellent  4.5 / 5</span> </div>
+							<div className="r2-ratt"> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <i className="fa fa-star"></i> <Image layout={'fill'} src="/images/h-trip.png" alt=""/> <span>Excellent  4.5 / 5</span> </div>
 							<p>Discover two of South America’s greatest cities, Rio de Janeiro and Buenos Aires, at a leisurely pace. A major highlight on this journey is a visit to Iguassu Falls in between your two city stays. It truly is one of the most spectacular sights on Earth. See the impressive falls from both the Brazilian and Argentine sides.</p>
 							<p>Brazil’s view takes you through clouds of mist and the opportunity to see these 275 falls, spanning nearly two miles! Argentina’s side allows you to walk along the boardwalk network and embark on a jungle train through the forest for unforgettable views. Hear the deafening roar and admire the brilliant rainbows created by the clouds of spray, and take in the majesty of this wonder of the world. From vibrant cities to scenic beauty, this vacation to Rio de Janeiro, Iguassu Falls, and Buenos Aires will leave you with vacation memories you’ll cherish for life.</p>
 						</div>
@@ -129,22 +131,22 @@ export default function HotelDetail() {
 							</div>
 							<div className="room-photo-all">
 								<div className="col-md-3 room-photo">
-									<div className="gall-grid room-photo-gal"> <img className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/1.jpg" alt="" /> </div>
+									<div className="gall-grid room-photo-gal"> <Image layout={'fill'} className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/1.jpg" alt="" /> </div>
 								</div>
 								<div className="col-md-3 room-photo">
-									<div className="gall-grid room-photo-gal"> <img className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/2.jpg" alt="" /> </div>
+									<div className="gall-grid room-photo-gal"> <Image layout={'fill'} className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/2.jpg" alt="" /> </div>
 								</div>
 								<div className="col-md-3 room-photo">
-									<div className="gall-grid room-photo-gal"> <img className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/3.jpg" alt="" /> </div>
+									<div className="gall-grid room-photo-gal"> <Image layout={'fill'} className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/3.jpg" alt="" /> </div>
 								</div>
 								<div className="col-md-3 room-photo">
-									<div className="gall-grid room-photo-gal"> <img className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/4.jpg" alt="" /> </div>
+									<div className="gall-grid room-photo-gal"> <Image layout={'fill'} className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/4.jpg" alt="" /> </div>
 								</div>
 								<div className="col-md-3 room-photo">
-									<div className="gall-grid room-photo-gal"> <img className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/5.jpg" alt="" /> </div>
+									<div className="gall-grid room-photo-gal"> <Image layout={'fill'} className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/5.jpg" alt="" /> </div>
 								</div>
 								<div className="col-md-3 room-photo">
-									<div className="gall-grid room-photo-gal"> <img className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/6.jpg" alt="" /> </div>
+									<div className="gall-grid room-photo-gal"> <Image layout={'fill'} className="materialboxed" data-caption="A picture of a way with a group of trees in a park" src="/images/room/6.jpg" alt="" /> </div>
 								</div>
 							</div>
 						</div>
@@ -157,38 +159,38 @@ export default function HotelDetail() {
 								<ul>
 									<li>
 										<div className="re-room-list">
-											<div className="col-md-3 re-room-list-1"><img src="/images/room/1.jpg" alt=""/> </div>
+											<div className="col-md-3 re-room-list-1"><Image layout={'fill'} src="/images/room/1.jpg" alt=""/> </div>
 											<div className="col-md-6 re-room-list-2">
 												<h4>Ultra Deluxe</h4>
 												<p><b>Amenities: </b>Television, Wi-Fi, Hair dryer, Towels, Dining, Music, GYM and more.. </p> <span><b>Includes</b> : Free Parking, Breakfast, VAT</span> <span><b>Maxinum </b> : 4 Persons</span> </div>
-											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$940</span> <a href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</a> </div>
+											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$940</span> <Link href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</Link> </div>
 										</div>
 									</li>
 									<li>
 										<div className="re-room-list">
-											<div className="col-md-3 re-room-list-1"><img src="/images/room/2.jpg" alt=""/> </div>
+											<div className="col-md-3 re-room-list-1"><Image layout={'fill'} src="/images/room/2.jpg" alt=""/> </div>
 											<div className="col-md-6 re-room-list-2">
 												<h4>Premium Rooms(EXECUTIVE)</h4>
 												<p><b>Amenities: </b>Television, Wi-Fi, Hair dryer, Towels, Dining, Music, GYM and more.. </p> <span><b>Includes</b> : Free Parking, Breakfast, VAT</span> <span><b>Maxinum </b> : 4 Persons</span> </div>
-											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$720</span> <a href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</a> </div>
+											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$720</span> <Link href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</Link> </div>
 										</div>
 									</li>
 									<li>
 										<div className="re-room-list">
-											<div className="col-md-3 re-room-list-1"><img src="/images/room/3.jpg" alt=""/> </div>
+											<div className="col-md-3 re-room-list-1"><Image layout={'fill'} src="/images/room/3.jpg" alt=""/> </div>
 											<div className="col-md-6 re-room-list-2">
 												<h4>Executive Deluxe Marine Bay View</h4>
 												<p><b>Amenities: </b>Television, Wi-Fi, Hair dryer, Towels, Dining, Music, GYM and more.. </p> <span><b>Includes</b> : Free Parking, Breakfast, VAT</span> <span><b>Maxinum </b> : 4 Persons</span> </div>
-											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$560</span> <a href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</a> </div>
+											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$560</span> <Link href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</Link> </div>
 										</div>
 									</li>
 									<li>
 										<div className="re-room-list">
-											<div className="col-md-3 re-room-list-1"><img src="/images/room/4.jpg" alt=""/> </div>
+											<div className="col-md-3 re-room-list-1"><Image layout={'fill'} src="/images/room/4.jpg" alt=""/> </div>
 											<div className="col-md-6 re-room-list-2">
 												<h4>Normal Rooms</h4>
 												<p><b>Amenities: </b>Television, Wi-Fi, Hair dryer, Towels, Dining, Music, GYM and more.. </p> <span><b>Includes</b> : Free Parking, Breakfast, VAT</span> <span><b>Maxinum </b> : 4 Persons</span> </div>
-											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$420</span> <a href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</a> </div>
+											<div className="col-md-3 re-room-list-3"> <span className="hot-list-p3-1">Price Per Night</span> <span className="hot-list-p3-2">$420</span> <Link href="booking.html" className="hot-page2-alp-quot-btn spec-btn-text">Book Now</Link> </div>
 										</div>
 									</li>
 								</ul>
@@ -202,21 +204,21 @@ export default function HotelDetail() {
 							<div className="room-rat-inn room-rat-bor">
 								<div className="row">
 									<div className="col-md-12 room-rat-body">
-										<div className="room-rat-img"> <img src="/images/users/2.png" alt=""/>
+										<div className="room-rat-img"> <Image layout={'fill'} src="/images/users/2.png" alt=""/>
 											<p>Orange Fab &amp; Weld <span>19th January, 2017</span> </p>
 										</div>
 										<div className="dir-rat-star"> <i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i> </div>
 										<p>Michael &amp; his team have been helping us with our eqiupment finance for the past 5 years - I think that says a quite a lot.. Michael is always ready to go the extra mile, always available, always helpfull that goes the same for his team that work with him - definatley our first phone call.</p>
 										<ul>
-											<li><a href="#"><span>Like</span><i className="fa fa-thumbs-o-up"></i></a> </li>
-											<li><a href="#"><span>Dis-Like</span><i className="fa fa-thumbs-o-down"></i></a> </li>
-											<li><a href="#"><span>Report</span> <i className="fa fa-flag-o"></i></a> </li>
-											<li><a href="#"><span>Comments</span> <i className="fa fa-commenting-o"></i></a> </li>
-											<li><a href="#"><span>Share Now</span>  <i className="fa fa-facebook"></i></a> </li>
-											<li><a href="#"><i className="fa fa-google-plus"></i></a> </li>
-											<li><a href="#"><i className="fa fa-twitter"></i></a> </li>
-											<li><a href="#"><i className="fa fa-linkedin"></i></a> </li>
-											<li><a href="#"><i className="fa fa-youtube"></i></a> </li>
+											<li><Link href="#"><><span>Like</span><i className="fa fa-thumbs-o-up"></i></></Link> </li>
+											<li><Link href="#"><><span>Dis-Like</span><i className="fa fa-thumbs-o-down"></i></></Link> </li>
+											<li><Link href="#"><><span>Report</span> <i className="fa fa-flag-o"></i></></Link> </li>
+											<li><Link href="#"><><span>Comments</span> <i className="fa fa-commenting-o"></i></></Link> </li>
+											<li><Link href="#"><><span>Share Now</span>  <i className="fa fa-facebook"></i></></Link> </li>
+											<li><Link href="#"><i className="fa fa-google-plus"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-twitter"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-linkedin"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-youtube"></i></Link> </li>
 										</ul>
 									</div>
 								</div>
@@ -224,21 +226,21 @@ export default function HotelDetail() {
 							<div className="room-rat-inn room-rat-bor">
 								<div className="row">
 									<div className="col-md-12 room-rat-body">
-										<div className="room-rat-img"> <img src="/images/users/5.png" alt=""/>
+										<div className="room-rat-img"> <Image layout={'fill'} src="/images/users/5.png" alt=""/>
 											<p>Orange Fab &amp; Weld <span>19th January, 2017</span> </p>
 										</div>
 										<div className="dir-rat-star"> <i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i> </div>
 										<p>Michael &amp; his team have been helping us with our eqiupment finance for the past 5 years - I think that says a quite a lot.. Michael is always ready to go the extra mile, always available, always helpfull that goes the same for his team that work with him - definatley our first phone call.</p>
 										<ul>
-											<li><a href="#"><span>Like</span><i className="fa fa-thumbs-o-up"></i></a> </li>
-											<li><a href="#"><span>Dis-Like</span><i className="fa fa-thumbs-o-down"></i></a> </li>
-											<li><a href="#"><span>Report</span> <i className="fa fa-flag-o"></i></a> </li>
-											<li><a href="#"><span>Comments</span> <i className="fa fa-commenting-o"></i></a> </li>
-											<li><a href="#"><span>Share Now</span>  <i className="fa fa-facebook"></i></a> </li>
-											<li><a href="#"><i className="fa fa-google-plus"></i></a> </li>
-											<li><a href="#"><i className="fa fa-twitter"></i></a> </li>
-											<li><a href="#"><i className="fa fa-linkedin"></i></a> </li>
-											<li><a href="#"><i className="fa fa-youtube"></i></a> </li>
+											<li><Link href="#"><><span>Like</span><i className="fa fa-thumbs-o-up"></i></></Link> </li>
+											<li><Link href="#"><><span>Dis-Like</span><i className="fa fa-thumbs-o-down"></i></></Link> </li>
+											<li><Link href="#"><><span>Report</span> <i className="fa fa-flag-o"></i></></Link> </li>
+											<li><Link href="#"><><span>Comments</span> <i className="fa fa-commenting-o"></i></></Link> </li>
+											<li><Link href="#"><><span>Share Now</span>  <i className="fa fa-facebook"></i></></Link> </li>
+											<li><Link href="#"><i className="fa fa-google-plus"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-twitter"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-linkedin"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-youtube"></i></Link> </li>
 										</ul>
 									</div>
 								</div>
@@ -246,21 +248,21 @@ export default function HotelDetail() {
 							<div className="room-rat-inn room-rat-bor">
 								<div className="row">
 									<div className="col-md-12 room-rat-body">
-										<div className="room-rat-img"> <img src="/images/users/3.png" alt=""/>
+										<div className="room-rat-img"> <Image layout={'fill'} src="/images/users/3.png" alt=""/>
 											<p>Orange Fab &amp; Weld <span>19th January, 2017</span> </p>
 										</div>
 										<div className="dir-rat-star"> <i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star" aria-hidden="true"></i><i className="fa fa-star-o" aria-hidden="true"></i> </div>
 										<p>Michael &amp; his team have been helping us with our eqiupment finance for the past 5 years - I think that says a quite a lot.. Michael is always ready to go the extra mile, always available, always helpfull that goes the same for his team that work with him - definatley our first phone call.</p>
 										<ul>
-											<li><a href="#"><span>Like</span><i className="fa fa-thumbs-o-up"></i></a> </li>
-											<li><a href="#"><span>Dis-Like</span><i className="fa fa-thumbs-o-down"></i></a> </li>
-											<li><a href="#"><span>Report</span> <i className="fa fa-flag-o"></i></a> </li>
-											<li><a href="#"><span>Comments</span> <i className="fa fa-commenting-o"></i></a> </li>
-											<li><a href="#"><span>Share Now</span>  <i className="fa fa-facebook"></i></a> </li>
-											<li><a href="#"><i className="fa fa-google-plus"></i></a> </li>
-											<li><a href="#"><i className="fa fa-twitter"></i></a> </li>
-											<li><a href="#"><i className="fa fa-linkedin"></i></a> </li>
-											<li><a href="#"><i className="fa fa-youtube"></i></a> </li>
+											<li><Link href="#"><><span>Like</span><i className="fa fa-thumbs-o-up"></i></></Link> </li>
+											<li><Link href="#"><><span>Dis-Like</span><i className="fa fa-thumbs-o-down"></i></></Link> </li>
+											<li><Link href="#"><><span>Report</span> <i className="fa fa-flag-o"></i></></Link> </li>
+											<li><Link href="#"><><span>Comments</span> <i className="fa fa-commenting-o"></i></></Link> </li>
+											<li><Link href="#"><><span>Share Now</span>  <i className="fa fa-facebook"></i></></Link> </li>
+											<li><Link href="#"><i className="fa fa-google-plus"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-twitter"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-linkedin"></i></Link> </li>
+											<li><Link href="#"><i className="fa fa-youtube"></i></Link> </li>
 										</ul>
 									</div>
 								</div>
@@ -272,13 +274,13 @@ export default function HotelDetail() {
 								<p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p>
 							</div>
 							<ul>
-								<li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i> Facebook</a> </li>
-								<li><a href="#"><i className="fa fa-google-plus" aria-hidden="true"></i> Google+</a> </li>
-								<li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
+								<li><Link href="#"><><i className="fa fa-facebook" aria-hidden="true"></i> Facebook</></Link> </li>
+								<li><Link href="#"><><i className="fa fa-google-plus" aria-hidden="true"></i> Google+</></Link> </li>
+								<li><Link href="#"><><i className="fa fa-twitter" aria-hidden="true"></i> Twitter</></Link>
 								</li>
-								<li><a href="#"><i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</a>
+								<li><Link href="#"><><i className="fa fa-linkedin" aria-hidden="true"></i> LinkedIn</></Link>
 								</li>
-								<li><a href="#"><i className="fa fa-whatsapp" aria-hidden="true"></i> Whats App</a>
+								<li><Link href="#"><><i className="fa fa-whatsapp" aria-hidden="true"></i> Whats App</></Link>
 								</li>
 							</ul>
 						</div>
@@ -287,7 +289,7 @@ export default function HotelDetail() {
 			</div>
 		</div>
 
-        <footer className="site-footer clearfix">
+        {/* <footer className="site-footer clearfix">
 		<div className="sidebar-container">
 			<div className="sidebar-inner">
 				<div className="widget-area clearfix">
@@ -295,49 +297,49 @@ export default function HotelDetail() {
 						<div>
 							<div className="container">
 								<div className="row">
-									<div className="col-sm-12 col-md-3 foot-logo"> <img src="/images/logo1.png" alt="logo"/>
+									<div className="col-sm-12 col-md-3 foot-logo"> <Image layout={'fill'} src="/images/logo1.png" alt="logo"/>
 										<p className="hasimg">Hotels worldwide incl. Infos, Ratings and Photos. Make your Hotel Reservation cheap.</p>
 										<p className="hasimg">The top-rated hotel booking services.</p>
 									</div>
 									<div className="col-sm-12 col-md-3">
 										<h4>Support &amp; Help</h4>
 										<ul className="two-columns">
-											<li><a href="dashboard.html">Dashboard</a>
+											<li><Link href="dashboard.html">Dashboard</Link>
 											</li>
-											<li><a href="db-activity.html">DB Activity</a>
+											<li><Link href="db-activity.html">DB Activity</Link>
 											</li>
-											<li><a href="booking.html">Booking</a>
+											<li><Link href="booking.html">Booking</Link>
 											</li>
-											<li><a href="contact-us.html">Contact Us</a>
+											<li><Link href="contact-us.html">Contact Us</Link>
 											</li>
-											<li><a href="about-us.html">About Us</a>
+											<li><Link href="about-us.html">About Us</Link>
 											</li>
-											<li><a href="aminities.html">Aminities</a>
+											<li><Link href="aminities.html">Aminities</Link>
 											</li>
-											<li><a href="blog.html">Blog</a>
+											<li><Link href="blog.html">Blog</Link>
 											</li>
-											<li><a href="menu1.html">Food Menu</a>
+											<li><Link href="menu1.html">Food Menu</Link>
 											</li>
 										</ul>
 									</div>
 									<div className="col-sm-12 col-md-3">
 										<h4>Cities Covered</h4>
 										<ul className="two-columns">
-											<li><a href="#!">Sydney</a>
+											<li><Link href="#!">Sydney</Link>
 											</li>
-											<li><a href="#!">Basel</a>
+											<li><Link href="#!">Basel</Link>
 											</li>
-											<li><a href="#!">Copenhagen</a>
+											<li><Link href="#!">Copenhagen</Link>
 											</li>
-											<li><a href="#!">Frankfurt</a>
+											<li><Link href="#!">Frankfurt</Link>
 											</li>
-											<li><a href="#!">Vancouver</a>
+											<li><Link href="#!">Vancouver</Link>
 											</li>
-											<li><a href="#!">Auckland</a>
+											<li><Link href="#!">Auckland</Link>
 											</li>
-											<li><a href="#!">Vienna</a>
+											<li><Link href="#!">Vienna</Link>
 											</li>
-											<li><a href="#!">Los Angeles</a>
+											<li><Link href="#!">Los Angeles</Link>
 											</li>
 										</ul>
 									</div>
@@ -354,7 +356,7 @@ export default function HotelDetail() {
 								<div className="row">
 									<div className="col-sm-12 col-md-3">
 										<h4>Payment Options</h4>
-										<p className="hasimg"> <img src="/images/payment.png" alt="payment"/> </p>
+										<p className="hasimg"> <Image layout={'fill'} src="/images/payment.png" alt="payment"/> </p>
 									</div>
 									<div className="col-sm-12 col-md-4">
 										<h4>Subscribe Now</h4>
@@ -371,12 +373,12 @@ export default function HotelDetail() {
 										<h4>Follow with us</h4>
 										<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
 										<ul>
-											<li><a href="#!"><i className="fa fa-facebook" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-twitter" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-youtube" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+											<li><Link href="#!"><i className="fa fa-facebook" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-google-plus" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-twitter" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-linkedin" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-youtube" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-whatsapp" aria-hidden="true"></i></Link> </li>
 										</ul>
 									</div>
 								</div>
@@ -391,7 +393,7 @@ export default function HotelDetail() {
 		<div className="container">
 			<p>copyrights © 2017 RN53Themes.net. &nbsp;&nbsp;All rights reserved. </p>
 		</div>
-	</section>
+	</section> */}
 	
         </AppLayout>
     );

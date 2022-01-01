@@ -1,4 +1,6 @@
-
+import Image from 'next/image';
+import Script from 'next/script'
+import Link from 'next/link'
 
 export default function AppFooter() {
 
@@ -9,33 +11,34 @@ export default function AppFooter() {
 			<div className="row">
 				<div className="foot-com foot-1">
 					<ul>
-						<li><a href="#"><i className="fa fa-facebook" aria-hidden="true"></i></a>
+						<li><Link href="#"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
 						</li>
-						<li><a href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></a>
+						<li><Link href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
 						</li>
-						<li><a href="#"><i className="fa fa-twitter" aria-hidden="true"></i></a>
+						<li><Link href="#"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
 						</li>
 					</ul>
 				</div>
 				<div className="foot-com foot-2">
-					<h5>Phone: (+404) 142 21 23 78</h5> </div>
+					<h5>Phone: 1234567890</h5> </div>
 				<div className="foot-com foot-3">
-                <a className="waves-effect waves-light" href="booking.html">room reservation</a> </div>
+                {/* <Link className="waves-effect waves-light" href="booking.html">room reservation</Link>  */}
+				</div>
 				<div className="foot-com foot-4">
-					<a href="#"><img src="/images/card.png" alt="" />
-					</a>
+					<Link href="#"><img  src="/images/card.png" alt="" />
+					</Link>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<script src="/js/jquery.min.js"></script>
-	<script src="/js/jquery-ui.js"></script>
-	<script src="/js/angular.min.js"></script>
-	<script src="/js/bootstrap.js" type="text/javascript"></script>
-	<script src="/js/materialize.min.js" type="text/javascript"></script>
-	<script src="/js/jquery.mixitup.min.js" type="text/javascript"></script>
-	<script src="/js/custom.js"></script>
+	<Script src="/js/jquery.min.js"></Script>
+	<Script src="/js/jquery-ui.js"></Script>
+	{/* <Script src="/js/angular.min.js"></Script> */}
+	<Script src="/js/bootstrap.js" type="text/javascript"></Script>
+	<Script src="/js/materialize.min.js" type="text/javascript"></Script>
+	<Script src="/js/jquery.mixitup.min.js" type="text/javascript"></Script>
+	<Script src="/js/custom.js"></Script>
         </>
     );
 }

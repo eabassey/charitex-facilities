@@ -7484,12 +7484,12 @@
                 buttonText = this._get(inst, "buttonText");
                 buttonImage = this._get(inst, "buttonImage");
                 inst.trigger = $(this._get(inst, "buttonImageOnly") ?
-                    $("<img/>").addClass(this._triggerClass).attr({
+                    $("<Image/>").addClass(this._triggerClass).attr({
                         src: buttonImage,
                         alt: buttonText,
                         title: buttonText
                     }) :
-                    $("<button type='button'></button>").addClass(this._triggerClass).html(!buttonImage ? buttonText : $("<img/>").attr({
+                    $("<button type='button'></button>").addClass(this._triggerClass).html(!buttonImage ? buttonText : $("<Image/>").attr({
                         src: buttonImage,
                         alt: buttonText,
                         title: buttonText
@@ -8984,9 +8984,9 @@
                 this._getFormatConfig(inst)));
 
             prev = (this._canAdjustMonth(inst, -1, drawYear, drawMonth) ?
-                "<a class='ui-datepicker-prev ui-corner-all' data-handler='prev' data-event='click'" +
-                " title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "e" : "w") + "'>" + prevText + "</span></a>" :
-                (hideIfNoPrevNext ? "" : "<a class='ui-datepicker-prev ui-corner-all ui-state-disabled' title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "e" : "w") + "'>" + prevText + "</span></a>"));
+                "<Link class='ui-datepicker-prev ui-corner-all' data-handler='prev' data-event='click'" +
+                " title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "e" : "w") + "'>" + prevText + "</span></Link>" :
+                (hideIfNoPrevNext ? "" : "<Link class='ui-datepicker-prev ui-corner-all ui-state-disabled' title='" + prevText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "e" : "w") + "'>" + prevText + "</span></Link>"));
 
             nextText = this._get(inst, "nextText");
             nextText = (!navigationAsDateFormat ? nextText : this.formatDate(nextText,
@@ -8994,9 +8994,9 @@
                 this._getFormatConfig(inst)));
 
             next = (this._canAdjustMonth(inst, +1, drawYear, drawMonth) ?
-                "<a class='ui-datepicker-next ui-corner-all' data-handler='next' data-event='click'" +
-                " title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "w" : "e") + "'>" + nextText + "</span></a>" :
-                (hideIfNoPrevNext ? "" : "<a class='ui-datepicker-next ui-corner-all ui-state-disabled' title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "w" : "e") + "'>" + nextText + "</span></a>"));
+                "<Link class='ui-datepicker-next ui-corner-all' data-handler='next' data-event='click'" +
+                " title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "w" : "e") + "'>" + nextText + "</span></Link>" :
+                (hideIfNoPrevNext ? "" : "<Link class='ui-datepicker-next ui-corner-all ui-state-disabled' title='" + nextText + "'><span class='ui-icon ui-icon-circle-triangle-" + (isRTL ? "w" : "e") + "'>" + nextText + "</span></Link>"));
 
             currentText = this._get(inst, "currentText");
             gotoDate = (this._get(inst, "gotoCurrent") && inst.currentDay ? currentDate : today);
@@ -9099,11 +9099,11 @@
                                 ((!otherMonth || showOtherMonths) && daySettings[2] ? " title='" + daySettings[2].replace(/'/g, "&#39;") + "'" : "") + // cell title
                                 (unselectable ? "" : " data-handler='selectDay' data-event='click' data-month='" + printDate.getMonth() + "' data-year='" + printDate.getFullYear() + "'") + ">" + // actions
                                 (otherMonth && !showOtherMonths ? "&#xa0;" : // display for other months
-                                    (unselectable ? "<span class='ui-state-default'>" + printDate.getDate() + "</span>" : "<a class='ui-state-default" +
+                                    (unselectable ? "<span class='ui-state-default'>" + printDate.getDate() + "</span>" : "<Link class='ui-state-default" +
                                         (printDate.getTime() === today.getTime() ? " ui-state-highlight" : "") +
                                         (printDate.getTime() === currentDate.getTime() ? " ui-state-active" : "") + // highlight selected day
                                         (otherMonth ? " ui-priority-secondary" : "") + // distinguish dates from other months
-                                        "' href='#'>" + printDate.getDate() + "</a>")) + "</td>"; // display selectable date
+                                        "' href='#'>" + printDate.getDate() + "</Link>")) + "</td>"; // display selectable date
                             printDate.setDate(printDate.getDate() + 1);
                             printDate = this._daylightSavingAdjust(printDate);
                         }
@@ -12545,7 +12545,7 @@
             // dialog in IE (#9312)
             this.uiDialogTitlebarClose = $("<button type='button'></button>")
                 .button({
-                    label: $("<a>").text(this.options.closeText).html(),
+                    label: $("<Link>").text(this.options.closeText).html(),
                     icon: "ui-icon-closethick",
                     showLabel: false
                 })
@@ -12848,7 +12848,7 @@
                 this.uiDialogTitlebarClose.button({
 
                     // Ensure that we always pass a string
-                    label: $("<a>").text("" + this.options.closeText).html()
+                    label: $("<Link>").text("" + this.options.closeText).html()
                 });
             }
 
@@ -17213,7 +17213,7 @@
 
             // Add buttons
             .append(
-                "<a></a><a></a>"
+                "<Link></Link><Link></Link>"
             );
         },
 
@@ -17548,7 +17548,7 @@
             },
 
             _buttonHtml: function() {
-                return "<a></a><a></a>";
+                return "<Link></Link><Link></Link>";
             }
         });
     }
@@ -18503,7 +18503,7 @@
                 var title = $(this).attr("title") || "";
 
                 // Escape title, since we're going from an attribute to raw HTML
-                return $("<a>").text(title).html();
+                return $("<Link>").text(title).html();
             },
             hide: true,
 

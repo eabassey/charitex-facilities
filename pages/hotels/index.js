@@ -1,5 +1,7 @@
 import { AppLayout } from "../../components/AppLayout";
 import {hotels} from '../../data';
+import Image from 'next/image';
+import Link from 'next/link'
 
 
 export default function Hotels() {
@@ -13,9 +15,9 @@ export default function Hotels() {
 					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
 						</p>
 							<ul>
-								<li><a href="#">Home</a>
+								<li><Link href="#">Home</Link>
 								</li>
-								<li><a href="#">Our Hotels</a>
+								<li><Link href="#">Our Hotels</Link>
 								</li>
 							</ul>
 				</div>
@@ -36,7 +38,7 @@ export default function Hotels() {
 					</div>
 					{hotels?.map((h) => (
 						<div key={h.id} className="col-md-3">
-						<a href={`/hotels/${h.id}`}>
+						<Link href={`/hotels/${h.id}`}>
 							<div className="all-hotel-like-com">
 								<div className="all-hotel-lc-img"> <img src="/images/hotel/2.jpg" alt=""/> </div>
 								<div className="all-hotel-lc-con all-hotel-lc-con2">
@@ -45,7 +47,7 @@ export default function Hotels() {
 									<p>{h.city}, {h.country}</p>
 								</div>
 							</div>
-						</a>
+						</Link>
 					</div>
 					))}
 				</div>
@@ -60,49 +62,49 @@ export default function Hotels() {
 						<div>
 							<div className="container">
 								<div className="row">
-									<div className="col-sm-12 col-md-3 foot-logo"> <img src="/images/logo1.png" alt="logo"/>
+									<div className="col-sm-12 col-md-3 foot-logo"> <Image src="/images/logo1.png" alt="logo"/>
 										<p className="hasimg">Hotels worldwide incl. Infos, Ratings and Photos. Make your Hotel Reservation cheap.</p>
 										<p className="hasimg">The top-rated hotel booking services.</p>
 									</div>
 									<div className="col-sm-12 col-md-3">
 										<h4>Support &amp; Help</h4>
 										<ul className="two-columns">
-											<li><a href="dashboard.html">Dashboard</a>
+											<li><Link href="dashboard.html">Dashboard</Link>
 											</li>
-											<li><a href="db-activity.html">DB Activity</a>
+											<li><Link href="db-activity.html">DB Activity</Link>
 											</li>
-											<li><a href="booking.html">Booking</a>
+											<li><Link href="booking.html">Booking</Link>
 											</li>
-											<li><a href="contact-us.html">Contact Us</a>
+											<li><Link href="contact-us.html">Contact Us</Link>
 											</li>
-											<li><a href="about-us.html">About Us</a>
+											<li><Link href="about-us.html">About Us</Link>
 											</li>
-											<li><a href="aminities.html">Aminities</a>
+											<li><Link href="aminities.html">Aminities</Link>
 											</li>
-											<li><a href="blog.html">Blog</a>
+											<li><Link href="blog.html">Blog</Link>
 											</li>
-											<li><a href="menu1.html">Food Menu</a>
+											<li><Link href="menu1.html">Food Menu</Link>
 											</li>
 										</ul>
 									</div>
 									<div className="col-sm-12 col-md-3">
 										<h4>Cities Covered</h4>
 										<ul className="two-columns">
-											<li><a href="#!">Sydney</a>
+											<li><Link href="#!">Sydney</Link>
 											</li>
-											<li><a href="#!">Basel</a>
+											<li><Link href="#!">Basel</Link>
 											</li>
-											<li><a href="#!">Copenhagen</a>
+											<li><Link href="#!">Copenhagen</Link>
 											</li>
-											<li><a href="#!">Frankfurt</a>
+											<li><Link href="#!">Frankfurt</Link>
 											</li>
-											<li><a href="#!">Vancouver</a>
+											<li><Link href="#!">Vancouver</Link>
 											</li>
-											<li><a href="#!">Auckland</a>
+											<li><Link href="#!">Auckland</Link>
 											</li>
-											<li><a href="#!">Vienna</a>
+											<li><Link href="#!">Vienna</Link>
 											</li>
-											<li><a href="#!">Los Angeles</a>
+											<li><Link href="#!">Los Angeles</Link>
 											</li>
 										</ul>
 									</div>
@@ -119,7 +121,7 @@ export default function Hotels() {
 								<div className="row">
 									<div className="col-sm-12 col-md-3">
 										<h4>Payment Options</h4>
-										<p className="hasimg"> <img src="/images/payment.png" alt="payment"/> </p>
+										<p className="hasimg"> <Image src="/images/payment.png" alt="payment"/> </p>
 									</div>
 									<div className="col-sm-12 col-md-4">
 										<h4>Subscribe Now</h4>
@@ -136,12 +138,12 @@ export default function Hotels() {
 										<h4>Follow with us</h4>
 										<p>Join the thousands of other There are many variations of passages of Lorem Ipsum available</p>
 										<ul>
-											<li><a href="#!"><i className="fa fa-facebook" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-google-plus" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-twitter" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-linkedin" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-youtube" aria-hidden="true"></i></a> </li>
-											<li><a href="#!"><i className="fa fa-whatsapp" aria-hidden="true"></i></a> </li>
+											<li><Link href="#!"><i className="fa fa-facebook" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-google-plus" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-twitter" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-linkedin" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-youtube" aria-hidden="true"></i></Link> </li>
+											<li><Link href="#!"><i className="fa fa-whatsapp" aria-hidden="true"></i></Link> </li>
 										</ul>
 									</div>
 								</div>

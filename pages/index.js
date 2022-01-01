@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import {AppLayout} from '../components/AppLayout'
 // import styles from '../styles/Home.module.css'
 
@@ -20,16 +21,22 @@ export default function Home() {
 						<div className="home-bod-2">
 							<ul>
 								<li>
-									<a href="/hotels" className="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="/images/icon/h1.png" alt=""/> Hotels</a>
+                  <Link href="/hotels">
+									<a href="/hotels" className="waves-effect waves-light btn-large wed-pop-ser-btn">
+                    <><img src="/images/icon/h1.png" alt=""/> Hotels</>
+                    </a>
+                  </Link>
 								</li>
 								{/* <li>
-									<a href="all-rooms.html" className="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="images/icon/h7.png" alt=""/> Booking</a>
+									<Link href="all-rooms.html" className="waves-effect waves-light btn-large wed-pop-ser-btn"><Image src="images/icon/h7.png" alt=""/> Booking</Link>
 								</li> */}
 								{/* <li>
-									<a href="menu.html" className="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="images/icon/h2.png" alt=""/> Menu</a>
+									<Link href="menu.html" className="waves-effect waves-light btn-large wed-pop-ser-btn"><Image src="images/icon/h2.png" alt=""/> Menu</Link>
 								</li> */}
 								<li>
-									<a href="/about-us" className="waves-effect waves-light btn-large wed-pop-ser-btn"><img src="/images/icon/h5.png" alt=""/> About Us</a>
+									<a href="/about-us" className="waves-effect waves-light btn-large wed-pop-ser-btn">
+                    <><img src="/images/icon/h5.png" alt=""/> About Us</>
+                    </a>
 								</li>
 							</ul>
 						</div>

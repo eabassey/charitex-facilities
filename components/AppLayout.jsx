@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import AppFooter from './AppFooter';
+import Link from 'next/link'
 
 export function AppLayout({children}) {
 
@@ -11,11 +12,11 @@ export function AppLayout({children}) {
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
             <link rel="shortcut icon" href="/images/fav.ico" type="image/x-icon"/>
             <link href="https://fonts.googleapis.com/css?family=Poppins%7CQuicksand:500,700" rel="stylesheet"/>
-            <link rel="stylesheet" href="css/font-awesome.min.css"/>
+            {/* <link rel="stylesheet" href="css/font-awesome.min.css"/>
             <link href="/css/materialize.css" rel="stylesheet"/>
             <link href="/css/style.css" rel="stylesheet"/>
             <link href="/css/bootstrap.css" rel="stylesheet" type="text/css" />
-            <link href="/css/responsive.css" rel="stylesheet"/>
+            <link href="/css/responsive.css" rel="stylesheet"/> */}
 
             </Head>
 
@@ -23,10 +24,10 @@ export function AppLayout({children}) {
 		<div className="mm">
 			<div className="mm-inn">
 				<div className="mm-logo">
-					<a href="/">
+					<Link href="/">
                         <span>Charlitex Hotels</span>
-                        {/* <img src="/images/logo.png" alt=""/> */}
-					</a>
+                        {/* <Image src="/images/logo.png" alt=""/> */}
+					</Link>
 				</div>
 				<div className="mm-icon"><span><i className="fa fa-bars show-menu" aria-hidden="true"></i></span>
 				</div>
@@ -34,11 +35,11 @@ export function AppLayout({children}) {
 					<div className="mm-close"><span><i className="fa fa-times hide-menu" aria-hidden="true"></i></span>
 					</div>
 					<ul>
-                    <li><a href="/hotels">Our Hotels</a>
+                    <li><Link href="/hotels">Our Hotels</Link>
                     </li>
-                    <li><a href="/about-us">About Us</a>
+                    <li><Link href="/about-us">About Us</Link>
                     </li>
-                    <li><a href="/contact-us">Contact Us</a>
+                    <li><Link href="/contact-us">Contact Us</Link>
                     </li>
 					</ul>
 				</div>
@@ -52,26 +53,26 @@ export function AppLayout({children}) {
 				<div className="row">
 					<div className="top-bar">
 						<ul>
-							<li><a href="/hotels">Our Hotels</a>
+							<li><Link href="/hotels">Our Hotels</Link>
 							</li>
-							<li><a href="/about-us">About Us</a>
+							<li><Link href="/about-us">About Us</Link>
 							</li>
-							<li><a href="/contact-us">Contact Us</a>
+							<li><Link href="/contact-us">Contact Us</Link>
 							</li>
 						</ul>
 					</div>
 				</div>
 				<div className="row">
 					<div className="logo">
-						<a href="/">
-                            {/* <img src="/images/logo.png" alt="" /> */}
+						<Link href="/">
+                            {/* <Image src="/images/logo.png" alt="" /> */}
                         <span>Charlitex Hotels</span>
-						</a>
+						</Link>
 					</div>
 					<div className="menu-bar">
 						<ul>
-							<li><a href="/">Home</a></li>
-                            <li><a href="/hotels">Hotels</a></li>
+							<li><Link href="/">Home</Link></li>
+                            <li><Link href="/hotels">Hotels</Link></li>
 						</ul>
 					</div>
 				</div>
