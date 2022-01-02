@@ -2,7 +2,7 @@ import Head from 'next/head';
 import AppFooter from './AppFooter';
 import Link from 'next/link'
 
-export function AppLayout({children}) {
+export function AppLayout({children, wrapperClass}) {
 
     return (
         <>
@@ -47,7 +47,7 @@ export function AppLayout({children}) {
 		</div>
 	</section>
 
-    <section className="main">
+    <section className={wrapperClass}>
     <div className="menu-section">
 			<div className="container">
 				<div className="row">

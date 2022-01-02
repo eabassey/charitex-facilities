@@ -7,7 +7,7 @@ import Link from 'next/link'
 export default function Hotels() {
 
     return (
-        <AppLayout>
+        <AppLayout wrapperClass="">
         <div className="inn-banner">
 			<div className="container">
 				<div className="row">
@@ -40,7 +40,7 @@ export default function Hotels() {
 						<div key={h.id} className="col-md-3">
 						<Link href={`/hotels/${h.id}`}>
 							<div className="all-hotel-like-com">
-								<div className="all-hotel-lc-img"> <img src="/images/hotel/2.jpg" alt=""/> </div>
+								<div className="all-hotel-lc-img"> <img src={h.imageUrl} alt=""/> </div>
 								<div className="all-hotel-lc-con all-hotel-lc-con2">
 									<h5>{h.name}</h5>
 									{/* <p>{h.address}</p> */}
