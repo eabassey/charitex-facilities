@@ -21,8 +21,8 @@ export default function Home() {
 						<div className="home-bod-2">
 							<ul>
 								<li>
-                  <Link href="/hotels">
-									<a href="/hotels" className="waves-effect waves-light btn-large wed-pop-ser-btn">
+                  <Link passHref href="/hotels">
+									<a className="waves-effect waves-light btn-large wed-pop-ser-btn">
                     <><img src="/images/icon/h1.png" alt=""/> Hotels</>
                     </a>
                   </Link>
@@ -34,9 +34,11 @@ export default function Home() {
 									<Link href="menu.html" className="waves-effect waves-light btn-large wed-pop-ser-btn"><Image src="images/icon/h2.png" alt=""/> Menu</Link>
 								</li> */}
 								<li>
-									<a href="/about-us" className="waves-effect waves-light btn-large wed-pop-ser-btn">
-                    <><img src="/images/icon/h5.png" alt=""/> About Us</>
-                    </a>
+									<Link passHref href="/about-us">
+									<a className="waves-effect waves-light btn-large wed-pop-ser-btn">
+									<><img src="/images/icon/h5.png" alt=""/> About Us</>
+									</a>
+									</Link>
 								</li>
 							</ul>
 						</div>

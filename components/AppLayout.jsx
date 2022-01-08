@@ -24,7 +24,7 @@ export function AppLayout({children, wrapperClass}) {
 		<div className="mm">
 			<div className="mm-inn">
 				<div className="mm-logo">
-					<Link href="/">
+					<Link passHref href="/">
                         <span>Charlitex Hotels</span>
                         {/* <Image src="/images/logo.png" alt=""/> */}
 					</Link>
@@ -53,11 +53,11 @@ export function AppLayout({children, wrapperClass}) {
 				<div className="row">
 					<div className="top-bar">
 						<ul>
-							<li><Link href="/hotels">Our Hotels</Link>
+							<li><Link passHref href="/hotels">Our Hotels</Link>
 							</li>
-							<li><Link href="/about-us">About Us</Link>
+							<li><Link passHref href="/about-us">About Us</Link>
 							</li>
-							<li><Link href="/contact-us">Contact Us</Link>
+							<li><Link passHref href="/contact-us">Contact Us</Link>
 							</li>
 						</ul>
 					</div>
@@ -71,8 +71,8 @@ export function AppLayout({children, wrapperClass}) {
 					</div>
 					<div className="menu-bar">
 						<ul>
-							<li><Link href="/">Home</Link></li>
-                            <li><Link href="/hotels">Hotels</Link></li>
+							<li><Link passHref href="/">Home</Link></li>
+                            <li><Link passHref href="/hotels">Hotels</Link></li>
 						</ul>
 					</div>
 				</div>

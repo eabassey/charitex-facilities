@@ -11,11 +11,11 @@ export default function AppFooter() {
 			<div className="row">
 				<div className="foot-com foot-1">
 					<ul>
-						<li><Link href="#"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
+						<li><Link passHref href="#"><i className="fa fa-facebook" aria-hidden="true"></i></Link>
 						</li>
-						<li><Link href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
+						<li><Link passHref href="#"><i className="fa fa-google-plus" aria-hidden="true"></i></Link>
 						</li>
-						<li><Link href="#"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
+						<li><Link passHref href="#"><i className="fa fa-twitter" aria-hidden="true"></i></Link>
 						</li>
 					</ul>
 				</div>
@@ -25,8 +25,8 @@ export default function AppFooter() {
                 {/* <Link className="waves-effect waves-light" href="booking.html">room reservation</Link>  */}
 				</div>
 				<div className="foot-com foot-4">
-					<Link href="#"><img  src="/images/card.png" alt="" />
-					</Link>
+					{/* <Link href="#"><img  src="/images/card.png" alt="" />
+					</Link> */}
 				</div>
 			</div>
 		</div>

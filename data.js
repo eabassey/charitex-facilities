@@ -1,32 +1,32 @@
 
 export const hotels = [
     {
-        id: 'prime-hotel',
-        name: 'The Prime Hotel',
+        id: 'us-hotel',
+        name: 'Manhattan Hotel',
         address: '28800 Orchard Lake Road, Suite 180 Farmington Hills',
         city: 'Texas',
         country: 'United States',
         imageUrl: '/images/hotel/1.jpg'
     },
     {
-        id: 'layers-hotel',
-        name: 'The Layers Hotel',
+        id: 'Abbey hotel',
+        name: 'London Hotel',
         address: '28800 Orchard Lake Road, Suite 180 Farmington Hills',
         city: 'London',
         country: 'United Kingdom',
         imageUrl: '/images/hotel/2.jpg'
     },
     {
-        id: 'golden-hotel',
-        name: 'The Golden Hotel',
+        id: 'india-hotel',
+        name: 'Chen Hotel',
         address: '28800 Orchard Lake Road, Suite 180 Farmington Hills',
         city: 'Chennai',
         country: 'India',
         imageUrl: '/images/hotel/3.jpg'
     },
     {
-        id: 'budapest-hotel',
-        name: 'The Budapest Hotel',
+        id: 'italy-hotel',
+        name: 'Mafia Hotel',
         address: '28800 Orchard Lake Road, Suite 180 Farmington Hills',
         city: 'Rome',
         country: 'Italy',

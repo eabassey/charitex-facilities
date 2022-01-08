@@ -12,8 +12,7 @@ export default function Hotels() {
 			<div className="container">
 				<div className="row">
 					<h4>Our Hotels</h4>
-					<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-						</p>
+					<p>Some description here....</p>
 							<ul>
 								<li><Link href="#">Home</Link>
 								</li>
