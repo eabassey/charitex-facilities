@@ -64,7 +64,7 @@ export default function HotelDetail() {
 								<p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p>
 							</div>
 							<h4>Price For 1 Night</h4>
-							<p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p> <span>Non Refundable</span> <span className="inn-room-price">Rs.6,030</span> </div>
+							<p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p> <span>Non Refundable</span> <span className="inn-room-price">$ 2,030</span> </div>
 						<div className="inn-detail-p1 inn-com">
 							<div className="detail-title">
 								<h2>Hotel Rooms</h2>
