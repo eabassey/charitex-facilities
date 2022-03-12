@@ -35,6 +35,7 @@ export default function Hotels() {
 						</div>
 						<p>Choose from a variety of accommodation facilities around the world. We are here to make you happy.</p>
 					</div>
+					{/* Catallog of facilites  - name, date, number of people who qualify */}
 					{hotels?.map((h) => (
 						<div key={h.id} className="col-md-3">
 						<Link href={`/hotels/${h.id}`}>

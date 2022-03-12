@@ -25,7 +25,7 @@ export function AppLayout({children, wrapperClass}) {
 			<div className="mm-inn">
 				<div className="mm-logo">
 					<Link passHref href="/">
-                        <span>Charlitex Hotels</span>
+                        <span>Charlitex Accommodations</span>
                         {/* <Image src="/images/logo.png" alt=""/> */}
 					</Link>
 				</div>
@@ -35,7 +35,7 @@ export function AppLayout({children, wrapperClass}) {
 					<div className="mm-close"><span><i className="fa fa-times hide-menu" aria-hidden="true"></i></span>
 					</div>
 					<ul>
-                    <li><Link href="/hotels">Our Hotels</Link>
+                    <li><Link href="/hotels">Our Facilities</Link>
                     </li>
                     <li><Link href="/about-us">About Us</Link>
                     </li>

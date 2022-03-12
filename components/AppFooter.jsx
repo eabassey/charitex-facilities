@@ -20,7 +20,7 @@ export default function AppFooter() {
 					</ul>
 				</div>
 				<div className="foot-com foot-2">
-					<h5>Phone: 1234567890</h5> </div>
+					<h5>Phone: +1 469 847 8806</h5> </div>
 				<div className="foot-com foot-3">
                 {/* <Link className="waves-effect waves-light" href="booking.html">room reservation</Link>  */}
 				</div>

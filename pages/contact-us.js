@@ -14,7 +14,7 @@ export default function ContactUs() {
 					<p>Curabitur auctor, massa sed interdum ornare, nulla sem vestibulum purus, eu maximus magna urna eu nunc.</p>
 					<p> </p>
 					<ul>
-						<li><a href="#">Home</a>
+						<li><a href="/index">Home</a>
 						</li>
 						<li><a href="#">Contact Us</a>
 						</li>

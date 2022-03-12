@@ -13,8 +13,8 @@ export default function Home() {
 				<div className="row">
 					<div className="home-bod">
 						<div className="home-bod-1">
-							<h4>Today up to <span>70%</span> offer</h4>
-							<h2>Charlitex Hotels</h2>
+							{/* <h4>Today up to <span>70%</span> offer</h4> */}
+							<h2>Charlitex Worldwide Accommodation</h2>
 							<p>We provide you with luxurious accommodation and make you feel at home.</p>
 							{/* <p>a procedure intended to establish the quality, performance, or reliability of something, especially before it is taken into widespread use.</p> */}
 						</div>
@@ -23,7 +23,7 @@ export default function Home() {
 								<li>
                   <Link passHref href="/hotels">
 									<a className="waves-effect waves-light btn-large wed-pop-ser-btn">
-                    <><img src="/images/icon/h1.png" alt=""/> Hotels</>
+                    <><img src="/images/icon/h1.png" alt=""/> Facilities</>
                     </a>
                   </Link>
 								</li>
